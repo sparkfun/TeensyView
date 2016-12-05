@@ -20925,56 +20925,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="0.3175" y="-0.127"/>
 </polygon>
 </package>
-<package name="SMT-JUMPER_3_2-NC_TRACE_NO-SILK">
-<smd name="1" x="-1.016" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="3" x="1.016" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="0" y1="0" x2="1.016" y2="0" width="0.254" layer="1"/>
-<wire x1="0" y1="0" x2="-1.016" y2="0" width="0.254" layer="1"/>
-<polygon width="0.127" layer="29">
-<vertex x="0.3175" y="0.127"/>
-<vertex x="0.6985" y="0.127"/>
-<vertex x="0.6985" y="-0.127"/>
-<vertex x="0.3175" y="-0.127"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="-0.6985" y="0.127"/>
-<vertex x="-0.3175" y="0.127"/>
-<vertex x="-0.3175" y="-0.127"/>
-<vertex x="-0.6985" y="-0.127"/>
-</polygon>
-</package>
-<package name="SMT-JUMPER_3_2-NC_TRACE_SILK">
-<wire x1="1.27" y1="-1.016" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="1.016" x2="1.7272" y2="0.5588" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.7272" y1="0.5588" x2="-1.27" y2="1.016" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.7272" y1="-0.5588" x2="-1.27" y2="-1.016" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.27" y1="-1.016" x2="1.7272" y2="-0.5588" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.7272" y1="-0.5588" x2="1.7272" y2="0.5588" width="0.1524" layer="21"/>
-<wire x1="-1.7272" y1="-0.5588" x2="-1.7272" y2="0.5588" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="1.016" x2="1.27" y2="1.016" width="0.1524" layer="21"/>
-<smd name="1" x="-1.016" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="3" x="1.016" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="0" y1="0" x2="1.016" y2="0" width="0.254" layer="1"/>
-<wire x1="0" y1="0" x2="-1.016" y2="0" width="0.254" layer="1"/>
-<polygon width="0.127" layer="29">
-<vertex x="0.3175" y="0.127"/>
-<vertex x="0.6985" y="0.127"/>
-<vertex x="0.6985" y="-0.127"/>
-<vertex x="0.3175" y="-0.127"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="-0.6985" y="0.127"/>
-<vertex x="-0.3175" y="0.127"/>
-<vertex x="-0.3175" y="-0.127"/>
-<vertex x="-0.6985" y="-0.127"/>
-</polygon>
-</package>
 </packages>
 <symbols>
 <symbol name="SMT-JUMPER_3_1-NC_TRACE">
@@ -20993,24 +20943,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-</symbol>
-<symbol name="SMT-JUMPER_3_2-NC_TRACE">
-<wire x1="-0.635" y1="-1.397" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="180" cap="flat"/>
-<wire x1="-0.635" y1="1.397" x2="0" y2="2.032" width="1.27" layer="94" curve="-90" cap="flat"/>
-<wire x1="0" y1="2.032" x2="0.635" y2="1.397" width="1.27" layer="94" curve="-90" cap="flat"/>
-<wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
-<text x="2.54" y="0.381" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="2.54" y="-0.381" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="94"/>
-<pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-<wire x1="0" y1="2.032" x2="0" y2="-1.778" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -21038,41 +20970,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </technologies>
 </device>
 <device name="_NO-SILK" package="SMT-JUMPER_3_1-NC_TRACE_NO-SILK">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="JUMPER-SMT_3_2-NC_TRACE" prefix="JP">
-<description>&lt;h3&gt;Normally closed trace jumper (2 of 2 connections)&lt;/h3&gt;
-&lt;p&gt;This jumper has a trace between all three pads so they are normally closed (NC). Use a razor knife to open the connection(s). For best results follow the IPC guidelines for cutting traces:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Cutout at least 0.063 mm (0.005 in).&lt;/li&gt;
-&lt;li&gt;Remove all loose material to clean up the cut area.&lt;/li&gt;
-&lt;li&gt;Seal the cut with an approved epoxy.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Reapply solder to reclose the connection(s).&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="SMT-JUMPER_3_2-NC_TRACE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="_NO-SILK" package="SMT-JUMPER_3_2-NC_TRACE_NO-SILK">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_SILK" package="SMT-JUMPER_3_2-NC_TRACE_SILK">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -21127,56 +21024,73 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" value="JUMPER-SMT_3_1-NC_TRACE_SILK"/>
 <part name="JP2" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" value="JUMPER-SMT_3_1-NC_TRACE_SILK"/>
 <part name="JP3" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" value="JUMPER-SMT_3_1-NC_TRACE_SILK"/>
-<part name="R2" library="SparkFun-Resistors" deviceset="4.7KOHM" device="-0603-1/10W-1%" value="4.7k"/>
-<part name="R3" library="SparkFun-Resistors" deviceset="4.7KOHM" device="-0603-1/10W-1%" value="4.7k"/>
-<part name="JP4" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_2-NC_TRACE" device="_SILK"/>
-<part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="R4" library="SparkFun-Resistors" deviceset="4.7KOHM" device="-0603-1/10W-1%" value="4.7k"/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
+<part name="JP4" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" value="JUMPER-SMT_3_1-NC_TRACE_SILK"/>
+<part name="JP5" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" value="JUMPER-SMT_3_1-NC_TRACE_SILK"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="236.22" y="7.62" size="2.54" layer="94" font="vector">v01</text>
+<text x="236.22" y="7.62" size="2.54" layer="94" font="vector">v02</text>
 <text x="149.86" y="7.62" size="2.54" layer="94" font="vector">Marshall Taylor</text>
 <wire x1="132.08" y1="185.42" x2="132.08" y2="154.94" width="0.2032" layer="97" style="longdash"/>
-<text x="48.26" y="81.28" size="1.778" layer="97" font="vector">Teensy pin 0</text>
-<text x="48.26" y="50.8" size="1.778" layer="97" font="vector">Teensy pin 12</text>
-<text x="106.68" y="50.8" size="1.778" layer="97" font="vector">Teensy pin 13</text>
-<text x="106.68" y="76.2" size="1.778" layer="97" font="vector">Teensy pin 23</text>
+<text x="7.62" y="104.14" size="1.778" layer="97" font="vector" rot="MR270">Teensy pin 0</text>
+<text x="7.62" y="45.72" size="1.778" layer="97" font="vector" rot="MR270">Teensy pin 12</text>
+<text x="124.46" y="25.4" size="1.778" layer="97" font="vector" rot="R90">Teensy pin 13</text>
+<text x="124.46" y="81.28" size="1.778" layer="97" font="vector" rot="R90">Teensy pin 23</text>
 <wire x1="132.08" y1="154.94" x2="132.08" y2="0" width="0.2032" layer="97" style="longdash"/>
-<wire x1="104.14" y1="76.2" x2="99.06" y2="76.2" width="0.2032" layer="97"/>
-<wire x1="104.14" y1="50.8" x2="99.06" y2="50.8" width="0.2032" layer="97"/>
-<wire x1="45.72" y1="50.8" x2="40.64" y2="50.8" width="0.2032" layer="97"/>
-<wire x1="45.72" y1="81.28" x2="40.64" y2="81.28" width="0.2032" layer="97"/>
+<wire x1="121.92" y1="76.2" x2="116.84" y2="76.2" width="0.2032" layer="97"/>
+<wire x1="121.92" y1="50.8" x2="116.84" y2="50.8" width="0.2032" layer="97"/>
+<wire x1="10.16" y1="50.8" x2="15.24" y2="50.8" width="0.2032" layer="97"/>
+<wire x1="10.16" y1="81.28" x2="15.24" y2="81.28" width="0.2032" layer="97"/>
 <text x="10.16" y="172.72" size="1.778" layer="97" font="vector" align="top-left">128x32 OLED on the Teensy 3 footprint.</text>
-<text x="10.16" y="142.24" size="1.778" layer="97" font="vector" align="top-left">To use SPI:
-  JP1:  Select Chip Select.  Choose (10 default) or 9.
-  JP2:  Select MOSI on pin 11 (default).
-  JP3:  Select SCLK on pin 13 (default).
-
-To use I2C (Address: 0x7A):
-  JP1:  Drive logic high on pin 10 or 9.
-  JP2:  Select SDA0 on pin A4
-  JP3:  Select SCL0 on pin A5</text>
+<text x="10.16" y="142.24" size="1.778" layer="97" font="vector" align="top-left">User jumpers 1-5 to configure where the OLED's control lines are connected,
+then configure with code to match.
+</text>
 <text x="5.08" y="175.26" size="5.08" layer="97" font="vector">TeensyView</text>
-<text x="10.16" y="167.64" size="1.778" layer="97" font="vector" align="top-left">Connect directly to Teensy.  Draws 30mA from the
-Teensy's 3.3v regulator.</text>
-<text x="20.32" y="60.96" size="1.778" layer="97" font="vector" align="top-left">9</text>
-<text x="12.7" y="60.96" size="1.778" layer="97" font="vector" align="top-left">10</text>
-<text x="43.18" y="40.64" size="1.778" layer="97" font="vector">11</text>
-<text x="86.36" y="53.34" size="1.778" layer="97" font="vector" align="top-left">13</text>
-<text x="50.8" y="40.64" size="1.778" layer="97" font="vector">A4</text>
-<text x="78.74" y="53.34" size="1.778" layer="97" font="vector" align="top-left">A5</text>
+<text x="10.16" y="167.64" size="1.778" layer="97" font="vector" align="top-left">Connect directly to Teensy.  Draws &lt;1mA from the
+Teensy's 3.3v regulator.
+(1.6V to 4.0V tolerant)</text>
+<text x="35.56" y="48.26" size="1.778" layer="97" font="vector" rot="MR180" align="center">7</text>
+<text x="76.2" y="58.42" size="1.778" layer="97" font="vector" rot="MR180" align="center">10</text>
+<text x="30.48" y="48.26" size="1.778" layer="97" font="vector" align="center">11</text>
+<text x="55.88" y="73.66" size="1.778" layer="97" font="vector" rot="R180" align="center">15</text>
+<text x="50.8" y="40.64" size="1.778" layer="97" font="vector" align="center">A4</text>
+<text x="99.06" y="48.26" size="1.778" layer="97" font="vector" rot="R180" align="center">14</text>
 <text x="7.62" y="144.78" size="3.81" layer="97" font="vector">Teensy Connections</text>
 <text x="137.16" y="175.26" size="3.81" layer="97" font="vector">OLED Connections</text>
 <wire x1="132.08" y1="154.94" x2="0" y2="154.94" width="0.2032" layer="97" style="longdash"/>
+<wire x1="7.62" y1="83.82" x2="10.16" y2="81.28" width="0.2032" layer="97"/>
+<wire x1="10.16" y1="50.8" x2="7.62" y2="48.26" width="0.2032" layer="97"/>
+<wire x1="121.92" y1="50.8" x2="124.46" y2="48.26" width="0.2032" layer="97"/>
+<wire x1="121.92" y1="76.2" x2="124.46" y2="78.74" width="0.2032" layer="97"/>
+<text x="81.28" y="58.42" size="1.778" layer="97" font="vector" rot="MR180" align="center">20</text>
+<text x="63.5" y="66.04" size="1.778" layer="97" font="vector" rot="MR180" align="center">21</text>
+<text x="58.42" y="66.04" size="1.778" layer="97" font="vector" rot="MR180" align="center">5</text>
+<text x="104.14" y="48.26" size="1.778" layer="97" font="vector" rot="R180" align="center">13</text>
+<text x="50.8" y="73.66" size="1.778" layer="97" font="vector" rot="R180" align="center">2</text>
+<text x="12.7" y="134.62" size="1.778" layer="97" font="vector" align="top-left">Default (copper link side):
+D/!C!: 5
+CS: 10
+MOSI: 11
+SCLK: 13
+!RESET!: 15
+</text>
+<text x="58.42" y="134.62" size="1.778" layer="97" font="vector" align="top-left">Alternate( Audio Shield Compatible)
+D/!C!: 21
+CS: 20
+MOSI: 7
+SCLK: 14
+!RESET!: 2
+</text>
+<text x="10.16" y="116.84" size="1.778" layer="97" font="vector" align="top-left">Always connect power and ground as well.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="V" x="147.32" y="0"/>
-<instance part="J1" gate="G$1" x="43.18" y="66.04" rot="R180"/>
-<instance part="J2" gate="G$1" x="101.6" y="68.58" rot="MR0"/>
+<instance part="J1" gate="G$1" x="12.7" y="66.04" rot="MR180"/>
+<instance part="J2" gate="G$1" x="119.38" y="68.58" rot="MR0"/>
 <instance part="FD1" gate="G$1" x="215.9" y="30.48"/>
 <instance part="FD2" gate="G$1" x="215.9" y="25.4"/>
 <instance part="LOGO1" gate="G$1" x="213.36" y="43.18"/>
@@ -21198,27 +21112,27 @@ Teensy's 3.3v regulator.</text>
 <instance part="GND5" gate="1" x="185.42" y="88.9"/>
 <instance part="GND6" gate="1" x="177.8" y="88.9"/>
 <instance part="GND7" gate="1" x="162.56" y="88.9"/>
-<instance part="GND8" gate="1" x="27.94" y="78.74"/>
+<instance part="GND8" gate="1" x="27.94" y="78.74" rot="MR0"/>
 <instance part="SUPPLY1" gate="G$1" x="152.4" y="134.62"/>
 <instance part="SUPPLY2" gate="G$1" x="170.18" y="134.62"/>
-<instance part="SUPPLY3" gate="G$1" x="88.9" y="91.44"/>
-<instance part="JP1" gate="G$1" x="17.78" y="58.42" smashed="yes" rot="R270">
-<attribute name="NAME" x="17.78" y="53.721" size="1.778" layer="95" font="vector"/>
+<instance part="SUPPLY3" gate="G$1" x="106.68" y="91.44"/>
+<instance part="JP1" gate="G$1" x="78.74" y="63.5" smashed="yes" rot="MR90">
+<attribute name="NAME" x="76.2" y="65.659" size="1.778" layer="95" font="vector" rot="MR180" align="top-left"/>
 </instance>
-<instance part="JP2" gate="G$1" x="48.26" y="43.18" smashed="yes" rot="MR90">
-<attribute name="NAME" x="50.8" y="37.719" size="1.778" layer="95" font="vector" rot="MR180"/>
+<instance part="JP2" gate="G$1" x="33.02" y="53.34" smashed="yes" rot="MR90">
+<attribute name="NAME" x="25.4" y="50.419" size="1.778" layer="95" font="vector" rot="MR180" align="top-left"/>
 </instance>
-<instance part="JP3" gate="G$1" x="83.82" y="50.8" smashed="yes" rot="R90">
-<attribute name="NAME" x="86.36" y="46.101" size="1.778" layer="95" font="vector"/>
+<instance part="JP3" gate="G$1" x="101.6" y="50.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="96.52" y="56.261" size="1.778" layer="95" font="vector" align="top-left"/>
 </instance>
-<instance part="R2" gate="G$1" x="71.12" y="73.66" rot="R90"/>
-<instance part="R3" gate="G$1" x="76.2" y="86.36" rot="R90"/>
-<instance part="JP4" gate="G$1" x="71.12" y="96.52" smashed="yes">
-<attribute name="NAME" x="73.66" y="96.901" size="1.778" layer="95" font="vector"/>
+<instance part="R4" gate="G$1" x="83.82" y="43.18" rot="MR90"/>
+<instance part="SUPPLY5" gate="G$1" x="83.82" y="50.8" rot="MR0"/>
+<instance part="JP4" gate="G$1" x="53.34" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="50.8" y="78.359" size="1.778" layer="95" font="vector" rot="MR180" align="top-left"/>
 </instance>
-<instance part="SUPPLY4" gate="G$1" x="63.5" y="106.68"/>
-<instance part="R4" gate="G$1" x="17.78" y="73.66" rot="R90"/>
-<instance part="SUPPLY5" gate="G$1" x="17.78" y="81.28"/>
+<instance part="JP5" gate="G$1" x="60.96" y="68.58" smashed="yes" rot="MR90">
+<attribute name="NAME" x="58.42" y="70.739" size="1.778" layer="95" font="vector" rot="MR180" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -21258,7 +21172,7 @@ Teensy's 3.3v regulator.</text>
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="33.02" y1="83.82" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="83.82" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="83.82" x2="27.94" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -21331,13 +21245,14 @@ Teensy's 3.3v regulator.</text>
 <label x="195.58" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="17.78" y1="66.04" x2="12.7" y2="66.04" width="0.1524" layer="91"/>
-<label x="12.7" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="78.74" y1="35.56" x2="78.74" y2="33.02" width="0.1524" layer="91"/>
+<label x="78.74" y="33.02" size="1.27" layer="95" rot="MR270" xref="yes"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="66.04" x2="17.78" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="35.56" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="66.04" x2="17.78" y2="68.58" width="0.1524" layer="91"/>
-<junction x="17.78" y="66.04"/>
+<wire x1="78.74" y1="35.56" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="35.56" x2="83.82" y2="38.1" width="0.1524" layer="91"/>
+<junction x="78.74" y="35.56"/>
 </segment>
 </net>
 <net name="!RESET" class="0">
@@ -21347,9 +21262,9 @@ Teensy's 3.3v regulator.</text>
 <label x="195.58" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="33.02" y1="66.04" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
-<label x="30.48" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="G$1" pin="8"/>
+<wire x1="53.34" y1="71.12" x2="53.34" y2="40.64" width="0.1524" layer="91"/>
+<label x="53.34" y="40.64" size="1.27" layer="95" rot="MR270" xref="yes"/>
+<pinref part="JP4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="D/!C" class="0">
@@ -21359,9 +21274,9 @@ Teensy's 3.3v regulator.</text>
 <label x="195.58" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="33.02" y1="68.58" x2="30.48" y2="68.58" width="0.1524" layer="91"/>
-<label x="30.48" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="G$1" pin="7"/>
+<wire x1="60.96" y1="63.5" x2="60.96" y2="40.64" width="0.1524" layer="91"/>
+<label x="60.96" y="40.64" size="1.27" layer="95" rot="MR270" xref="yes"/>
+<pinref part="JP5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="SCLK" class="0">
@@ -21371,10 +21286,9 @@ Teensy's 3.3v regulator.</text>
 <label x="195.58" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="81.28" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="81.28" y1="38.1" x2="83.82" y2="38.1" width="0.1524" layer="91"/>
+<label x="101.6" y="40.64" size="1.27" layer="95" rot="R270" xref="yes"/>
+<wire x1="101.6" y1="40.64" x2="101.6" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="38.1" x2="83.82" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDIN" class="0">
@@ -21384,10 +21298,9 @@ Teensy's 3.3v regulator.</text>
 <label x="195.58" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="45.72" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="33.02" y="40.64" size="1.27" layer="95" rot="R270" xref="yes"/>
 <pinref part="JP2" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="38.1" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="48.26" x2="33.02" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -21411,92 +21324,96 @@ Teensy's 3.3v regulator.</text>
 </segment>
 <segment>
 <pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
-<wire x1="88.9" y1="78.74" x2="88.9" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="78.74" x2="106.68" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="12"/>
-<wire x1="91.44" y1="78.74" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="JP4" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="96.52" x2="63.5" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="96.52" x2="63.5" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
+<wire x1="109.22" y1="78.74" x2="106.68" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
-<wire x1="17.78" y1="78.74" x2="17.78" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="48.26" x2="83.82" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="12"/>
-<wire x1="33.02" y1="55.88" x2="10.16" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="55.88" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="55.88" x2="66.04" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="55.88" x2="66.04" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="63.5" x2="73.66" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="3"/>
-<wire x1="10.16" y1="58.42" x2="12.7" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="JP1" gate="G$1" pin="1"/>
-<pinref part="J1" gate="G$1" pin="11"/>
-<wire x1="22.86" y1="58.42" x2="33.02" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="50.8" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="50.8" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="66.04" x2="91.44" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="7"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="66.04" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
-<junction x="76.2" y="66.04"/>
+<wire x1="96.52" y1="50.8" x2="93.98" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="50.8" x2="93.98" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="53.34" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="JP3" gate="G$1" pin="3"/>
 <pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="50.8" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="50.8" x2="106.68" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="JP2" gate="G$1" pin="3"/>
-<wire x1="43.18" y1="43.18" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="43.18" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="13"/>
-<wire x1="30.48" y1="53.34" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="53.34" x2="22.86" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="JP2" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="43.18" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="6"/>
-<wire x1="71.12" y1="43.18" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="63.5" x2="91.44" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="68.58" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
-<junction x="71.12" y="63.5"/>
+<wire x1="38.1" y1="53.34" x2="40.64" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="53.34" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="9"/>
+<wire x1="22.86" y1="63.5" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="A4PU" class="0">
+<net name="N$2" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="78.74" x2="71.12" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="63.5" x2="88.9" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="63.5" x2="88.9" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="68.58" x2="109.22" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="8"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<wire x1="104.14" y1="55.88" x2="104.14" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="76.2" x2="58.42" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="G$1" pin="3"/>
+<pinref part="J2" gate="G$1" pin="3"/>
+<wire x1="104.14" y1="55.88" x2="109.22" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="A5PU" class="0">
+<net name="N$15" class="0">
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="JP4" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="101.6" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="104.14" x2="76.2" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="104.14" x2="76.2" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="48.26" y1="76.2" x2="22.86" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="7"/>
+<wire x1="22.86" y1="68.58" x2="55.88" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="JP5" gate="G$1" pin="3"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="9"/>
+<wire x1="109.22" y1="71.12" x2="68.58" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="71.12" x2="68.58" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="JP5" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="68.58" x2="66.04" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
