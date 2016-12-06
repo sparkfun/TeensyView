@@ -20836,8 +20836,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="330KOHM" prefix="R">
-<description>&lt;h3&gt;330kΩ resistor&lt;/h3&gt;
+<deviceset name="820KOHM" prefix="R">
+<description>&lt;h3&gt;820kΩ resistor&lt;/h3&gt;
 &lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -20850,8 +20850,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-08968"/>
-<attribute name="VALUE" value="330k"/>
+<attribute name="PROD_ID" value="RES-13247"/>
+<attribute name="VALUE" value="820k"/>
 </technology>
 </technologies>
 </device>
@@ -21012,7 +21012,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C6" library="SparkFun-Capacitors" deviceset="4.7UF" device="-1206-16V-(+80/-20%)" value="4.7UF">
 <attribute name="PROD_ID" value="CAP-10300"/>
 </part>
-<part name="R1" library="SparkFun-Resistors" deviceset="330KOHM" device="-0603-1/10W-1%" value="330k"/>
+<part name="R1" library="SparkFun-Resistors" deviceset="820KOHM" device="-0603-1/10W-1%" value="820k"/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
