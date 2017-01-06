@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -21202,7 +21202,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheets>
 <sheet>
 <plain>
-<text x="236.22" y="7.62" size="2.54" layer="94" font="vector">v02</text>
+<text x="236.22" y="7.62" size="2.54" layer="94" font="vector">v10</text>
 <text x="149.86" y="7.62" size="2.54" layer="94" font="vector">Marshall Taylor</text>
 <wire x1="132.08" y1="185.42" x2="132.08" y2="154.94" width="0.2032" layer="97" style="longdash"/>
 <text x="7.62" y="104.14" size="1.778" layer="97" font="vector" rot="MR270">Teensy pin 0</text>
