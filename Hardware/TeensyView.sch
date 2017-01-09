@@ -21220,7 +21220,7 @@ then configure with code to match.
 </text>
 <text x="5.08" y="175.26" size="5.08" layer="97" font="vector">TeensyView</text>
 <text x="10.16" y="167.64" size="1.778" layer="97" font="vector" align="top-left">Connect directly to Teensy.  Draws ~16mA from the
-Teensy's 3.3v regulator.
+Teensy's 3.3V regulator.
 (1.6V to 4.0V tolerant)</text>
 <text x="35.56" y="48.26" size="1.778" layer="97" font="vector" rot="MR180" align="center">7</text>
 <text x="76.2" y="58.42" size="1.778" layer="97" font="vector" rot="MR180" align="center">10</text>

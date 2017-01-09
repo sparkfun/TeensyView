@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.00125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1039,7 +1039,7 @@
 <vertex x="5.36455625" y="2.086278125"/>
 </polygon>
 <text x="1.397" y="14.9225" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="center">12</text>
-<text x="31.8135" y="14.9225" size="0.8128" layer="21" font="vector" ratio="15" align="center">0</text>
+<text x="31.84525" y="14.6685" size="0.8128" layer="21" font="vector" ratio="15" align="center">0</text>
 <text x="1.524" y="3.175" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="center">13</text>
 <text x="34.163" y="14.6685" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="center">GND</text>
 <text x="29.21" y="3.175" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="center">3V</text>
@@ -1912,14 +1912,6 @@
 <text x="1.27" y="5.08" size="1.016" layer="20" font="vector" ratio="15" rot="R60">ROUTE OUT</text>
 <text x="30.099" y="13.5255" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center">15</text>
 <text x="29.6545" y="4.445" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center">1</text>
-<wire x1="0" y1="-1.905" x2="0.635" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="1.905" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="2.54" y2="-1.905" width="0.254" layer="21"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="-3.175" width="0.254" layer="21"/>
-<wire x1="2.54" y1="-3.175" x2="1.905" y2="-3.81" width="0.254" layer="21"/>
-<wire x1="1.905" y1="-3.81" x2="0.635" y2="-3.81" width="0.254" layer="21"/>
-<wire x1="0.635" y1="-3.81" x2="0" y2="-3.175" width="0.254" layer="21"/>
-<wire x1="0" y1="-3.175" x2="0" y2="-1.905" width="0.254" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
