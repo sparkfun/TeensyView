@@ -46,7 +46,7 @@ Compatible products
 
 Version History
 ---------------
-* [V_1.0.0](https://github.com/sparkfun/SparkFun_TeensyView/V_1.0.0) - Initial release
+* [V_1.0.0](https://github.com/sparkfun/TeensyView/tree/V_1.0.0) - Initial release
 
 License Information
 -------------------
