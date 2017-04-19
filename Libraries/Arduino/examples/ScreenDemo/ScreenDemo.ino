@@ -235,6 +235,7 @@ void scrollExample(char scrollStr[])
     oled.display();
     delay(20);
   }
+  delay(1000);
 }
 
 void loop()
@@ -243,7 +244,7 @@ void loop()
   lineExample();   // Then the line example function
   shapeExample();  // Then the shape example
   textExamples();  // Finally the text example
-  scrollExample("Hello World!");  // Added scroll example
+  scrollExample("Scroll!");  // Added scroll example
 }
 
 // Center and print a small title
