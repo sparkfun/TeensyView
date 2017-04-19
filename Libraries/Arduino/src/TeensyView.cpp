@@ -339,7 +339,7 @@ size_t TeensyView::write(uint8_t c) {
 	} else {
 		drawChar(cursorX, cursorY, c, foreColor, drawMode);
 		cursorX += fontPitch;
-		if ((cursorX > (LCDWIDTH - fontPitch))) {
+		if ((cursorX > (LCDWIDTH - fontWidth))) {
 			cursorY += fontHeight;
 			cursorX = 0;
 		}
