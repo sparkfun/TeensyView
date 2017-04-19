@@ -216,7 +216,7 @@ void scrollExample(char scrollStr[])
 {
   oled.clear(PAGE);
   oled.display();
-  oled.setFontType(0);
+  oled.setFontType(1);
   delay(500);
   int16_t scrollPos=oled.getLCDWidth() - 1;
   int16_t scrollStringLength=strlen(scrollStr);
