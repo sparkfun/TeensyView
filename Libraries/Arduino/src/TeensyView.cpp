@@ -338,8 +338,8 @@ size_t TeensyView::write(uint8_t c) {
 		// skip
 	} else {
 		drawChar(cursorX, cursorY, c, foreColor, drawMode);
-		cursorX += fontWidth+1;
-		if ((cursorX > (LCDWIDTH - fontWidth))) {
+		cursorX += fontPitch;
+		if ((cursorX > (LCDWIDTH - fontPitch))) {
 			cursorY += fontHeight;
 			cursorX = 0;
 		}
@@ -642,6 +642,14 @@ uint8_t TeensyView::getFontHeight(void) {
 	return fontHeight;
 }
 
+/** \brief Get font pitch.
+
+    The current font's pitch return as byte.
+*/
+uint8_t TeensyView::getFontPitch(void) {
+	return fontPitch;
+}
+
 /** \brief Get font starting character.
 
     Return the starting ASCII character of the currnet font, not all fonts start with ASCII character 0. Custom fonts can start from any ASCII character.
@@ -685,9 +693,10 @@ uint8_t TeensyView::setFontType(uint8_t type) {
 	fontType=type;
 	fontWidth=pgm_read_byte(fontsPointer[fontType]+0);
 	fontHeight=pgm_read_byte(fontsPointer[fontType]+1);
-	fontStartChar=pgm_read_byte(fontsPointer[fontType]+2);
-	fontTotalChar=pgm_read_byte(fontsPointer[fontType]+3);
-	fontMapWidth=(pgm_read_byte(fontsPointer[fontType]+4)*100)+pgm_read_byte(fontsPointer[fontType]+5); // two bytes values into integer 16
+	fontPitch=pgm_read_byte(fontsPointer[fontType]+2);
+	fontStartChar=pgm_read_byte(fontsPointer[fontType]+3);
+	fontTotalChar=pgm_read_byte(fontsPointer[fontType]+4);
+	fontMapWidth=(pgm_read_byte(fontsPointer[fontType]+5)*100)+pgm_read_byte(fontsPointer[fontType]+6); // two bytes values into integer 16
 	return true;
 }
 
