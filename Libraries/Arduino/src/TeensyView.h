@@ -50,10 +50,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LCDHEIGHT			32
 #define LCDMEMORYSIZE		( LCDWIDTH * LCDHEIGHT / 8 )
 
-#define FONTHEADERSIZE		6
+#define FONTHEADERSIZE		7
 // The font header size is the first bytes of the static const unsigned char space that are not data.
 // They are defined in the font files.
-//   first row defines - FONTWIDTH, FONTHEIGHT, ASCII START CHAR, TOTAL CHARACTERS, FONT MAP WIDTH HIGH, FONT MAP WIDTH LOW (2,56 meaning 256)
+//   first row defines - FONTWIDTH, FONTHEIGHT, FONTPITCH, ASCII START CHAR, TOTAL CHARACTERS, FONT MAP WIDTH HIGH, FONT MAP WIDTH LOW (2,56 meaning 256)
 
 #define NORM				0
 #define XOR					1
@@ -167,6 +167,7 @@ public:
 	// Font functions
 	uint8_t getFontWidth(void);
 	uint8_t getFontHeight(void);
+	uint8_t getFontPitch(void);
 	uint8_t getTotalFonts(void);
 	uint8_t getFontType(void);
 	uint8_t setFontType(uint8_t type);
@@ -188,7 +189,7 @@ private:
 	uint8_t wrpinmask, rdpinmask;
 	volatile uint8_t *ssport, *dcport, *ssreg, *dcreg;	// use volatile because these are fixed location port address
 	uint8_t mosipinmask, sckpinmask, sspinmask, dcpinmask;
-	uint8_t foreColor,drawMode,fontWidth, fontHeight, fontType, fontStartChar, fontTotalChar, cursorX, cursorY;
+	uint8_t foreColor,drawMode,fontWidth, fontHeight, fontPitch, fontType, fontStartChar, fontTotalChar, cursorX, cursorY;
 	uint16_t fontMapWidth;
 	static const unsigned char *fontsPointer[];
 	uint32_t clockRateSetting;

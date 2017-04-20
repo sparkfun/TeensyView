@@ -33,8 +33,8 @@ https://github.com/emil01/SparkFun_Micro_OLED_Arduino_Library/
 
 // Standard ASCII 5x7 font
 static const unsigned char font5x7[] PROGMEM = {
-	// first row defines - FONTWIDTH, FONTHEIGHT, ASCII START CHAR, TOTAL CHARACTERS, FONT MAP WIDTH HIGH, FONT MAP WIDTH LOW (2,56 meaning 256)
-	5,8,0,255,12,75,
+	// first row defines - FONTWIDTH, FONTHEIGHT, FONTPITCH, ASCII START CHAR, TOTAL CHARACTERS, FONT MAP WIDTH HIGH, FONT MAP WIDTH LOW (2,56 meaning 256)
+	5,8,6,0,255,12,75,
 	0x00, 0x00, 0x00, 0x00, 0x00,
 	0x3E, 0x5B, 0x4F, 0x5B, 0x3E,
 	0x3E, 0x6B, 0x4F, 0x6B, 0x3E,

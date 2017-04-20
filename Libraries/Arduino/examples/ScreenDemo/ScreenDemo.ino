@@ -96,7 +96,7 @@ void lineExample()
 
 void shapeExample()
 {
-  printTitle("Shapes!", 0);
+  printTitle("Shapes!", 1);
 
   // Silly pong demo. It takes a lot of work to fake pong...
   int paddleW = 3;  // Paddle width
@@ -106,7 +106,7 @@ void shapeExample()
   int paddle0_X = 2;
   // Paddle 1 (right) position coordinates
   int paddle1_Y = (oled.getLCDHeight() / 2) - (paddleH / 2);
-  int paddle1_X = oled.getLCDWidth() - 3 - paddleW;
+  int paddle1_X = oled.getLCDWidth() - 2 - paddleW;
   int ball_rad = 2;  // Ball radius
   // Ball position coordinates
   int ball_X = paddle0_X + paddleW + ball_rad;
@@ -166,7 +166,7 @@ void shapeExample()
     // Draw the Pong Field
     oled.clear(PAGE);  // Clear the page
     // Draw an outline of the screen:
-    oled.rect(0, 0, oled.getLCDWidth() - 1, oled.getLCDHeight());
+    oled.rect(0, 0, oled.getLCDWidth(), oled.getLCDHeight());
     // Draw the center line
     oled.rectFill(oled.getLCDWidth() / 2 - 1, 0, 2, oled.getLCDHeight());
     // Draw the Paddles:
@@ -183,89 +183,59 @@ void shapeExample()
 
 void textExamples()
 {
-  printTitle("Text!", 1);
-
-  // Demonstrate font 0. 5x8 font
-  oled.clear(PAGE);     // Clear the screen
-  oled.setFontType(0);  // Set font to type 0
-  oled.setCursor(0, 0); // Set cursor to top-left
-  // There are 255 possible characters in the font 0 type.
-  // Lets run through all of them and print them out!
-  for (int i = 0; i <= 255; i++)
-  {
-    // You can write byte values and they'll be mapped to
-    // their ASCII equivalent character.
-    oled.write(i);  // Write a byte out as a character
-    oled.display(); // Draw on the screen
-    delay(10);      // Wait 10ms
-    // We can only display 60 font 0 characters at a time.
-    // Every 60 characters, pause for a moment. Then clear
-    // the page and start over.
-    if ((i % 60 == 0) && (i != 0))
-    {
-      delay(500);           // Delay 500 ms
-      oled.clear(PAGE);     // Clear the page
-      oled.setCursor(0, 0); // Set cursor to top-left
+   for (int i=0; i<oled.getTotalFonts(); i++) {
+    oled.setFontType(i);
+    if(oled.getLCDWidth()>=oled.getFontPitch() &&
+       oled.getLCDHeight()>=oled.getFontHeight()) {
+      uint8_t _charsPerPage = (oled.getLCDWidth()/oled.getFontPitch()) *
+                              (oled.getLCDHeight()/oled.getFontHeight());
+      char msg[20];
+      sprintf(msg, "Font %d", i);
+      printTitle(msg, 1);
+      oled.setFontType(i);
+      oled.clear(PAGE);
+      oled.setCursor(0, 0);
+      for(int j=0; j<oled.getFontTotalChar(); j++) {
+        uint8_t _char=j+oled.getFontStartChar();
+        if((j % _charsPerPage == 0) && (j != 0)) {
+          delay(4000);
+          oled.clear(PAGE);
+          oled.setCursor(0, 0);
+        }
+        if(_char=='\n' || _char=='\r') oled.write(' ');
+        else                           oled.write(_char);
+        oled.display();
+        delay(10);
+      }
+      delay(4000);
     }
   }
-  delay(500);  // Wait 500ms before next example
+}
 
-  // Demonstrate font 1. 8x16. Let's use the print function
-  // to display every character defined in this font.
-  oled.setFontType(1);  // Set font to type 1
-  oled.clear(PAGE);     // Clear the page
-  oled.setCursor(0, 0); // Set cursor to top-left
-  // Print can be used to print a string to the screen:
-  oled.print(" !\"#$%&'()*+,-./01234");
-  oled.display();       // Refresh the display
-  delay(1000);          // Delay a second and repeat
+void scrollExample(const char scrollStr[])
+{
   oled.clear(PAGE);
-  oled.setCursor(0, 0);
-  oled.print("56789:;<=>?@ABCDEFGHI");
   oled.display();
-  delay(1000);
-  oled.clear(PAGE);
-  oled.setCursor(0, 0);
-  oled.print("JKLMNOPQRSTUVWXYZ[\\]^");
-  oled.display();
-  delay(1000);
-  oled.clear(PAGE);
-  oled.setCursor(0, 0);
-  oled.print("_`abcdefghijklmnopqrs");
-  oled.display();
-  delay(1000);
-  oled.clear(PAGE);
-  oled.setCursor(0, 0);
-  oled.print("tuvwxyz{|}~");
-  oled.display();
-  delay(1000);
-
-  // Demonstrate font 2. 10x16. Only numbers and '.' are defined.
-  // This font looks like 7-segment displays.
-  // Lets use this big-ish font to display readings from the
-  // analog pins.
-  for (int i = 0; i < 25; i++)
-  {
-    oled.clear(PAGE);            // Clear the display
-    oled.setCursor(0, 0);        // Set cursor to top-left
-    oled.setFontType(0);         // Smallest font
-    oled.print("A0: ");          // Print "A0"
-    oled.setFontType(2);         // 7-segment font
-    oled.print(analogRead(A0));  // Print a0 reading
-    oled.setCursor(0, 16);       // Set cursor to top-middle-left
-    oled.setFontType(0);         // Repeat
-    oled.print("A1: ");
-    oled.setFontType(2);
-    oled.print(analogRead(A1));
-    oled.setCursor(0, 32);
-    oled.setFontType(0);
-    oled.print("A2: ");
-    oled.setFontType(2);
-    oled.print(analogRead(A2));
+  oled.setFontType(1);
+  delay(500);
+  int16_t scrollPos=oled.getLCDWidth() - 1;
+  int16_t scrollStringLength=strlen(scrollStr);
+  int16_t scrollCharPitch=oled.getFontPitch();
+  int16_t scrollX;
+  int16_t scrollCount=oled.getLCDWidth()+(scrollStringLength*scrollCharPitch);
+  uint8_t scrollY=(oled.getLCDHeight()/2)-(oled.getFontHeight()/2);
+  for(int16_t i=0; i<scrollCount; i++) {
+    oled.clear(PAGE);
+    for(uint16_t j=0; j<scrollStringLength; j++){
+      scrollX = scrollPos+scrollCharPitch*j;
+      if((scrollX+scrollCharPitch>0) && (scrollX<oled.getLCDWidth()))
+        oled.drawChar(scrollX, scrollY, scrollStr[j]);
+    }
+    scrollPos--;
     oled.display();
-    delay(100);
+    delay(20);
   }
-
+  delay(1000);
 }
 
 void loop()
@@ -274,6 +244,7 @@ void loop()
   lineExample();   // Then the line example function
   shapeExample();  // Then the shape example
   textExamples();  // Finally the text example
+  scrollExample("Scroll!");  // Added scroll example
 }
 
 // Center and print a small title
@@ -287,8 +258,8 @@ void printTitle(String title, int font)
   oled.clear(PAGE);
   oled.setFontType(font);
   // Try to set the cursor in the middle of the screen
-  oled.setCursor(middleX - (oled.getFontWidth() * (title.length() / 2)),
-                 middleY - (oled.getFontWidth() / 2));
+  oled.setCursor(middleX - (oled.getFontPitch() * (title.length() / 2)),
+                 middleY - (oled.getFontHeight() / 2));
   // Print the title:
   oled.print(title);
   oled.display();
