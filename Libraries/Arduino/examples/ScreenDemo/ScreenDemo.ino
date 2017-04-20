@@ -212,7 +212,7 @@ void textExamples()
   }
 }
 
-void scrollExample(char scrollStr[])
+void scrollExample(const char scrollStr[])
 {
   oled.clear(PAGE);
   oled.display();
