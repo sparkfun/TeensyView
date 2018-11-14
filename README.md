@@ -10,13 +10,9 @@ A OLED display for the Teensy 3
 Repository Contents
 -------------------
 
-* **/Documentation** - Data sheets, additional product information
-* **/Enclosure** - Enclosure files 
-* **/Firmware** - Example code 
 * **/Hardware** - Eagle design files (.brd, .sch)
 * **/Libraries** - Libraries for use with the TeensyView
 * **/Production** - Production panel files (.brd)
-* **/Software** - Related software for the TeensyView
 
 Documentation
 --------------
