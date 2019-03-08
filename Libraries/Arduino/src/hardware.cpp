@@ -48,11 +48,19 @@ void TeensyView::spiSetup()
 	pinMode(csPin, OUTPUT);	// CS is an OUTPUT
 	digitalWrite(csPin, HIGH);	// Start CS High
 	
+	if(_spi == NULL){	// Preserves the old behavior when _spi is not specified
 	//Do alt pin assignment
 	SPI.setMOSI(mosiPin);
 	SPI.setSCK(sckPin);
 	
 	SPI.begin();
+	}
+	else{
+		_spi->begin(); 			// Begin with chosen SPI port
+		_spi->beginTransaction(SPISettings(clockRateSetting, MSBFIRST, SPI_MODE0));
+		_spi->transfer(0x00); 	// Kickstart SPI to get the right settings on the getgo
+		_spi->endTransaction();
+	}
 	
 	
 }
@@ -64,10 +72,19 @@ void TeensyView::spiSetup()
 **/
 void TeensyView::spiTransfer(byte data)
 {
+	if(_spi == NULL){	// Preserve old behavior when _spi not specified
 	SPI.beginTransaction(SPISettings(clockRateSetting, MSBFIRST, SPI_MODE0));
     digitalWrite(csPin, LOW);
 	SPI.transfer(data);	
     digitalWrite(csPin, HIGH);
     SPI.endTransaction();
+    }
+	else{				// Otherwise use the chosen _spi port
+		_spi->beginTransaction(SPISettings(clockRateSetting, MSBFIRST, SPI_MODE0));
+		digitalWrite(csPin, LOW);
+		_spi->transfer(data);	
+		digitalWrite(csPin, HIGH);
+		_spi->endTransaction();
+	}
 }
 
