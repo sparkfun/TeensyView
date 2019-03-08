@@ -5,7 +5,7 @@ SparkFun TeensyView
 
 [*SparkFun TeensyView (LCD-14048)*](https://www.sparkfun.com/products/14048)
 
-A OLED display for the Teensy 3
+An OLED display for the Teensy 3
 
 Repository Contents
 -------------------
