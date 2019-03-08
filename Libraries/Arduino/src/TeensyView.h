@@ -40,6 +40,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include <stdio.h>
 #include <Arduino.h>
+#include <SPI.h>
 
 #define swap(a, b) { uint8_t t = a; a = b; b = t; }
 
@@ -121,7 +122,7 @@ public:
 	// Constructor(s)
 	TeensyView(uint8_t rst, uint8_t dc, uint8_t cs, uint8_t sck, uint8_t mosi);
 	
-	void begin(void);
+	void begin( SPIClass* spiPort = NULL );
 	void setClockRate( uint32_t );
 	virtual size_t write(uint8_t);
 
@@ -192,6 +193,8 @@ private:
 	uint16_t fontMapWidth;
 	static const unsigned char *fontsPointer[];
 	uint32_t clockRateSetting;
+
+	SPIClass * 	_spi;	// Possible to use an Arduino standard SPIClass
 	
 	// Communication (Defined in hardware.cpp)
 	void spiTransfer(byte data);

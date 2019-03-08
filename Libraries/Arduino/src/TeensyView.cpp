@@ -121,8 +121,10 @@ void TeensyView::setClockRate( uint32_t inputClockRate )
 
     Setup IO pins for SPI port then send initialisation commands to the SSD1306 controller inside the OLED.
 */
-void TeensyView::begin()
+void TeensyView::begin( SPIClass* spiPort )
 {
+	_spi = spiPort;
+
 	// default 5x7 font
 	setFontType(0);
 	setColor(WHITE);
